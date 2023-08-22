@@ -7,8 +7,8 @@ import os
 class TextClassifier:
 
     @classmethod
-    def load_model(self, path='text_classifier/finalized_model.sav'):
-        path = os.path.dirname(os.path.abspath(__file__)) + '/finalized_model.sav'
+    def load_model(self, path='text_classifier/finalized_model_old.sav'):
+        path = os.path.dirname(os.path.abspath(__file__)) + '/finalized_model_old.sav'
         return pickle.load(open(path, 'rb'))
 
     @classmethod
